@@ -1,24 +1,18 @@
-import { ReactNode, ChangeEvent } from "react";
+import { ReactNode, ChangeEvent } from 'react'
 import styles from './BaseInput.module.scss'
 
 interface Props {
-    children?: ReactNode;
-    value: string;
-    type: string;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
-  }
+  children?: ReactNode
+  value: string
+  type: string
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void
+}
 
-
-function BaseInput( {children, value, onChange}: Props) {
-
+function BaseInput({ children, value, onChange }: Props) {
   return (
     <div>
-      <label htmlFor=""></label>
-      <input 
-        value={value} 
-        onChange={onChange} 
-        className={styles['base-input']}
-      >
+      <label htmlFor=''></label>
+      <input value={value} onChange={onChange} className={styles['base-input']}>
         {children}
       </input>
     </div>
