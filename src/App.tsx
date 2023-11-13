@@ -1,13 +1,12 @@
-import './App.css'
+import Router from './components/Router'
+import './App.scss'
 
 function App() {
 
  return (
-    <>
-    <div>
-      <p>Home page</p>
-    </div>
-    </>
+    <main>
+      <Router />
+    </main>
   )
 }
 
